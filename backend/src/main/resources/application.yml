@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/swipeguard}
+    username: ${DB_USER:swipeguard}
+    password: ${DB_PASSWORD:swipeguard}
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+swipeguard:
+  card-hmac-secret: ${CARD_HMAC_SECRET:dev-only-secret-change-me}
+  velocity-store: redis        # "memory" is used by unit tests
+  risk:
+    high-amount-threshold: 50000
+    high-amount-score: 40
+    risky-mcc: ["7995", "6051", "4829"]
+    risky-mcc-score: 30
+    cross-border-score: 30
+    home-country: IN
+    velocity-count: 6
+    velocity-window: 10m
+    velocity-score: 50
+    decline-threshold: 80
+    review-threshold: 40

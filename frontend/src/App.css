@@ -1,0 +1,14 @@
+main { max-width: 1200px; margin: 0 auto; padding: 24px; }
+.toolbar { display: flex; gap: 24px; margin-bottom: 16px; }
+.toolbar label { display: flex; flex-direction: column; font-size: 13px; gap: 4px; }
+table { width: 100%; border-collapse: collapse; background: #fff; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #e3e5e8; vertical-align: top; font-size: 14px; }
+ul { margin: 0; padding-left: 16px; }
+.decision-DECLINE { color: #b00020; font-weight: 600; }
+.decision-REVIEW { color: #b26a00; font-weight: 600; }
+.pager { display: flex; gap: 16px; align-items: center; margin-top: 12px; }
+.error { color: #b00020; }
+.overlay { position: fixed; inset: 0; background: rgba(0, 0, 0, 0.4); display: flex; align-items: center; justify-content: center; }
+.dialog { background: #fff; padding: 20px; border-radius: 8px; width: 420px; display: flex; flex-direction: column; gap: 12px; }
+.dialog label { display: flex; flex-direction: column; gap: 4px; font-size: 13px; }
+.dialog-actions { display: flex; justify-content: flex-end; gap: 8px; }
